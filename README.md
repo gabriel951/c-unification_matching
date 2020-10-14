@@ -63,18 +63,18 @@ theory above imports the theory below:
                  that deal with terms. Type checking will generate the additional 
                  pvs file: 
 
-**term\_adt.pvs - ** contains all inductive proof schematta for this ADT.
+**term\_adt.pvs -** contains all inductive proof schematta for this ADT.
 
 **fresh.pvs -** contains the definition of freshness through the boolean recursive 
-          function ``fresh" which checks if an atom is fresh for a term with 
-          respect to a specific context. The function ``fresh?" does something 
+          function "fresh" which checks if an atom is fresh for a term with 
+          respect to a specific context. The function "fresh?" does something 
           similar by verifying if an atom is fresh for a term in some context 
           and, simultaneously, it builds such a context, if it exists. Some 
           properties can be reached very easily, like that freshness is closed 
           over permutation action.
 
 **alpha\_equivalence.pvs -** concerns alpha-equivalence, that is defined recursively 
-          as the function ``alpha". The function alpha tests if two terms are 
+          as the function "alpha". The function alpha tests if two terms are 
           alpha-equivalent in a specific context. It is proved that alpha is 
           an equivalence relation. 
 
