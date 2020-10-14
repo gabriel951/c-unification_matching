@@ -246,6 +246,7 @@ size_lst_append: LEMMA
     size_lst(append(unif_prb_lst1, unif_prb_lst2)) = size_lst(unif_prb_lst1) + size_lst(unif_prb_lst2)
 
 %%%%%%%%%% end of lemmas related to the auxiliar functions above
+%%%%%%%%%% algorithm that performs nominal C-unification, adapted to handle a set of protected variables
 c_unify(prtc_vars, Delta, sigma, unif_prb_lst, fix_pnt_eq_lst): RECURSIVE list[nominal_sol_typ] =
 % base case: if there is no problem left to unify, the solution given is good enough
 IF null?(unif_prb_lst) THEN (:(Delta, sigma, fix_pnt_eq_lst):)
